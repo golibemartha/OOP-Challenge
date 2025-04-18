@@ -2,21 +2,21 @@ from pet import Pet
 
 def display_menu(pet):
 
-print(f"\nWhat would you like to do with {pet.name}?")
+ print(f"\nWhat would you like to do with {pet.name}?")
 
-print(f"1. 🍽️   Feed {pet.name}")
+ print(f"1. 🍽️   Feed {pet.name}")
 
-print(f"2. 😪  Let {pet.name} sleep")
+ print(f"2. 😪  Let {pet.name} sleep")
 
-print(f"3. ⚽  Play with {pet.name}")
+ print(f"3. ⚽  Play with {pet.name}")
 
-print(f"4. 🏆  Train a new trick with {pet.name}")
+ print(f"4. 🏆  Train a new trick with {pet.name}")
 
-print("5. ✨  Show learned tricks")
+ print("5. ✨  Show learned tricks")
 
-print(f"6. 📊  Check {pet.name}'s status")
+ print(f"6. 📊  Check {pet.name}'s status")
 
-print("7. ❌  Exit")
+ print("7. ❌  Exit")
 
 def get_valid_choice():
 
@@ -32,15 +32,15 @@ while True:
 
 def main():
 
-print("🐶 Welcome to the Virtual Pet Game")
+ print("🐶 Welcome to the Virtual Pet Game")
 
-name = input("What would you like to name your pet? ")
+ name = input("What would you like to name your pet? ")
 
-pet = Pet(name)
+ pet = Pet(name)
 
 
 
-print(f"\n🎉 Awesome! You've adopted {name}. Let's take care of them!")
+ print(f"\n🎉 Awesome! You've adopted {name}. Let's take care of them!")
 
 
 
@@ -102,6 +102,6 @@ while True:
 
         break
 
-if name == "main":
+if __name__ == "__main__":
 
-main()
+  main()
